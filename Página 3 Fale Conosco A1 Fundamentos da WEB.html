@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="UTF-8">
+<title> Solar Group</title>
+<style> 
+body {
+    background-position: left;
+    background-repeat: no-repeat;
+    color: rgb(3, 3, 3);
+    background-color:ghostwhite;
+    font-family: Arial, sans-serif;
+}
+
+header {
+
+color:rgb(255, 255, 255);
+background: #333;
+padding: 20px;
+display: flex;
+align-items: center;
+}
+header img {
+    width: 250px;
+    height: 250px; 
+    margin-right: 20px;
+}
+
+
+header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+nav {
+color: aliceblue;
+background: #333;
+text-align: center;
+padding: 10px;
+}
+
+nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 15px;
+}
+nav a:hover {
+            color: #c21313;
+            text-decoration: blue
+        }
+
+.container {
+
+    padding: 19px;
+    text-align:flex;
+}
+
+.catalog {
+
+display: flex;
+flex-wrap: wrap;
+gap: 25px;
+margin-bottom: 130px;
+
+}
+
+.product {
+
+    background-color: rgb(56, 151, 180);
+    padding: 20px;
+    border: 1px solid black;
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+
+}
+
+.product.img {
+
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    object-fit: cover;
+
+
+}
+
+footer {
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+    margin-top: auto;
+}
+
+header .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-family:'Roboto', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+form {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width:calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            resize: none;
+        }
+
+    
+
+        form button {
+            background-color: rgb(56, 151, 180);
+            color: aliceblue;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            
+        }
+
+        form .checkbox-group, form .radio-group {
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px;
+    margin-right: 480px;
+}
+
+
+    
+
+</style>
+
+</head>
+<body> 
+<header>
+<div class="text-content">
+<br>
+</div>
+</header>
+
+<nav>
+    <a href="index.html" style="margin-right: 30px;">Página Inicial</a>
+   
+
+</nav>
+<div class="container">
+    <h2>Envie-nos uma mensagem</h2>
+    <form action="xxx.php" method="post">
+
+        <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <div class="checkbox-group">
+            <input type="checkbox" id="checkbox" name="checkbox" required>
+            <label for="checkbox">Autorizo a utilização dos dados</label>
+        </div>
+            <div class="radio-group">
+        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+        <label for="masculino">M</label>
+        <input type="radio" id="feminino" name="sexo" value="feminino" required>
+        <label for="feminino">F</label>
+
+    </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+</form>
+<footer> 
+    <p>&copy;Solar Group 2025. Todos os direitos reservados.</p>
+    <p>Política de Privacidade</p>
+    <p>Termos de Uso</p>
+
+
+</footer>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
